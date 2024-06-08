@@ -30,7 +30,7 @@ Jadi, pada teknik VLSM, subnet mask (netmask) akan diberikan sesuai dengan kebut
 ![vlzm](<foto/ip vlsm.png>)
 
 **Konfigurasi Network :**
-- Jawa
+- JAWA
 ```
 auto lo
 iface lo inet loopback
@@ -38,492 +38,557 @@ iface lo inet loopback
 auto eth0
 iface eth0 inet dhcp
 
-#A1 Jawa Sumatera
 auto eth1
 iface eth1 inet static
-address 10.68.21.181
-netmask 255.255.255.252
+    address 10.68.21.177
+    netmask 255.255.255.252
 
-#A8 Jawa Kalimantan
 auto eth2
 iface eth2 inet static
-address 10.68.21.189
-netmask 255.255.255.252
+    address 10.68.21.189
+    netmask 255.255.255.252
 
-#A16 jAWA SumatrA
 auto eth3
 iface eth3 inet static
-address 10.68.21.201
-netmask 255.255.255.252
+    address 10.68.21.205
+    netmask 255.255.255.252
 ```
-
-- Sumatera 
-```
-auto lo
-iface lo inet loopback
-
-#A1 Jawa Sumatera
-auto eth0
-iface eth0 inet static
-address 10.68.21.182
-netmask 255.255.255.252
-gateway 10.68.21.181
-
-#A2 sumatra lampung
-auto eth1
-iface eth1 inet static
-address 10.68.21.177
-netmask 255.255.255.252
-
-#A4 sumat samosir subandang sumut
-auto eth2
-iface eth2 inet static
-address 10.68.21.97
-netmask 255.255.255.224
-```
-
-- Samosir(14 Host)
-```
-auto eth0
-iface eth0 inet static
-address 10.68.21.125
-netmask 255.255.255.224
-gateway 10.68.21.97
-```
-
-- Sibandang(11 Host)
-```
-auto eth0
-iface eth0 inet static
-address 10.68.21.126
-netmask 255.255.255.224
-gateway 10.68.21.97
-```
-
-- Sumatera Utara
-```
-#A5
-auto eth1
-iface eth1 inet static
-address 10.68.21.185
-netmask 255.255.255.252
-```
-
-- Aceh
-```
-#A5
-auto eth0
-iface eth0 inet static
-address 10.68.21.186
-netmask 255.255.255.252
-gateway 10.68.21.185
-
-#A6
-auto eth1
-iface eth1 inet static
-address 10.68.21.65
-netmask 255.255.255.224
-
-#A7
-auto eth2
-iface eth2 inet static
-address 10.68.20.1
-netmask 255.255.255.128
-```
-
-- Berawang-Tampu(53 Host)
-```
-#A6
-auto eth0
-iface eth0 inet static
-address 10.68.21.93
-netmask 255.255.255.224
-gateway 10.68.21.65
-```
-
-- Enang-Enang(27 Host)
-```
-#A6
-auto eth0
-iface eth0 inet static
-address 10.68.21.94
-netmask 255.255.255.224
-gateway 10.68.21.65
-```
-
-- Starland(44 Host)
-```
-#A6
-auto eth0
-iface eth0 inet static
-address 10.68.21.92
-netmask 255.255.255.224
-gateway 10.68.21.65
-```
-
-- Sabang(6 Host)
-```
-#A7
-auto eth0
-iface eth0 inet static
-address 10.68.20.126
-netmask 255.255.255.128
-gateway 10.68.20.1
-```
-
-- Lambaro(8 Host)
-```
-#A7
-auto eth0
-iface eth0 inet static
-address 10.68.20.125
-netmask 255.255.255.128
-gateway 10.68.20.1
-```
-
-- Lampung 
+- SUMATERA 
 ```
 auto lo
 iface lo inet loopback
 
-#A2 sumat lampung
 auto eth0
 iface eth0 inet static
-address 10.68.21.178
-netmask 255.255.255.252
-gateway 10.68.21.177
+    address 10.68.21.178
+    netmask 255.255.255.252
+    gateway 10.68.21.177
 
-#A3 Lampung sebuku sebesi8
 auto eth1
 iface eth1 inet static
-address 10.68.19.0
-netmask 255.255.255.0
-```
+    address 10.68.21.181
+    netmask 255.255.255.252
 
-- Sebuku(186 Host)
-```
-#A3
-auto eth0
-iface eth0 inet static
-address 10.68.19.254
-netmask 255.255.255.0
-gateway 10.68.19.1
-```
-
-- Sebesi
-```
-#A3
-auto eth0
-iface eth0 inet static
-address 10.68.19.253
-netmask 255.255.255.0
-gateway 10.68.19.1
-```
-
-- Kalimantan
-```
-#A8 jawa kalimantn
-auto eth0
-iface eth0 inet static
-address 10.68.21.190
-netmask 255.255.255.252
-gateway 10.68.21.189
-
-#a9 kali kalut
-auto eth1
-iface eth1 inet static
-address 10.68.21.193
-netmask 255.255.255.252
-```
-
-- Kalimantan Utara
-```
-#A9 kali kalut
-auto eth0
-iface eth0 inet static
-address 10.68.21.194
-netmask 255.255.255.252
-gateway 10.68.21.193
-
-#A10
-auto eth1
-iface eth1 inet static
-address 10.68.18.1
-netmask 255.255.255.0
-
-#A11 kali kaltim
 auto eth2
 iface eth2 inet static
-address 10.68.21.197
-netmask 255.255.255.252
+    address 10.68.21.65
+    netmask 255.255.255.224
 ```
+- LAMPUNG 
+```
+auto lo
+iface lo inet loopback
 
-- Selimau
-```
-#A10
 auto eth0
 iface eth0 inet static
-address 10.68.18.254
-netmask 255.255.255.0
-gateway 10.68.18.1
-```
+    address 10.68.21.182
+    netmask 255.255.255.252
+    gateway 10.68.21.181
 
-- Kalimantan Timur
-```
-#A11
-auto eth0
-iface eth0 inet static
-address 10.68.21.198
-netmask 255.255.255.252
-gateway 10.68.21.197
-
-#A13
 auto eth1
 iface eth1 inet static
-address 10.68.21.205
-netmask 255.255.255.252
+    address 10.68.19.1
+    netmask 255.255.255.0
 
-#A12
+```
+- Sebuku 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.19.2
+    netmask 255.255.255.0
+    gateway 10.68.19.1
+```
+- Sebesi 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.19.3
+    netmask 255.255.255.0
+    gateway 10.68.19.1
+```
+- Sibandang 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.21.66
+    netmask 255.255.255.224
+    gateway 10.68.21.65
+```
+- Samosir 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.21.67
+    netmask 255.255.255.224
+    gateway 10.68.21.65
+```
+- SUMATERA-UTARA 
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+    address 10.68.21.68
+    netmask 255.255.255.224
+    gateway 10.68.21.65
+
+auto eth1
+iface eth1 inet static
+    address 10.68.21.185
+    netmask 255.255.255.252
+```
+- ACEH 
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+    address 10.68.21.186
+    netmask 255.255.255.252
+    gateway 10.68.21.185
+
+auto eth1
+iface eth1 inet static
+    address 10.68.20.1
+    netmask 255.255.255.128
+
 auto eth2
 iface eth2 inet static
-address 10.68.16.1
-netmask 255.255.254.0
+    address 10.68.21.129
 ```
+- Berawang-Tampu 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.20.2
+    netmask 255.255.255.128
+    gateway 10.68.20.1
+```
+- Enang-Enang 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.20.3
+    netmask 255.255.255.128
+    gateway 10.68.20.1
+```
+- Starland 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.20.4
+    netmask 255.255.255.128
+    gateway 10.68.20.1
+```
+- Sabang 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.21.130
+    netmask 255.255.255.224
+    gateway 10.68.21.129
+```
+- Lambaro 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.21.131
+    netmask 255.255.255.224
+    gateway 10.68.21.129
+```
+- KALIMANTAN 
+```
+auto lo
+iface lo inet loopback
 
+auto eth0
+iface eth0 inet static
+    address 10.68.21.190
+    netmask 255.255.255.252
+    gateway 10.68.21.189
+
+auto eth1
+iface eth1 inet static
+    address 10.68.21.193
+    netmask 255.255.255.252
+```
+- KALIMANTAN-UTARA 
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+    address 10.68.21.194
+    netmask 255.255.255.252
+    gateway 10.68.21.193
+
+auto eth1
+iface eth1 inet static
+    address 10.68.18.1
+    netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+    address 10.68.21.197
+    netmask 255.255.255.252
+```
+- Selimau 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.18.2
+    netmask 255.255.255.0
+    gateway 10.68.18.1
+```
+- KALIMANTAN-TIMUR 
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+    address 10.68.21.198
+    netmask 255.255.255.252
+    gateway 10.68.21.197
+
+auto eth1
+iface eth1 inet static
+    address 10.68.16.1
+    netmask 255.255.254.0
+
+auto eth2
+iface eth2 inet static
+    address 10.68.21.201
+    netmask 255.255.255.252
+```
 - Bangkirai 
 ```
-#A12
 auto eth0
 iface eth0 inet static
-address 10.68.17.253
-netmask 255.255.254.0
-gateway 10.68.16.1
+    address 10.68.16.2
+    netmask 255.255.254.0
+    gateway 10.68.16.1
 ```
-
-- Lamaru(468 Host) 
+- Lamaru 
 ```
-#A12
 auto eth0
 iface eth0 inet static
-address 10.68.17.254
-netmask 255.255.254.0
-gateway 10.68.16.1
+    address 10.68.16.3
+    netmask 255.255.254.0
+    gateway 10.68.16.1
 ```
-
-- Kalimantan Selatan
-```
-#A13
-auto eth0
-iface eth0 inet static
-address 10.68.21.206
-netmask 255.255.255.252
-gateway 10.68.21.205
-
-#A14
-auto eth1
-iface eth1 inet static
-address 10.68.21.129
-netmask 255.255.255.224
-
-#A15
-auto eth2
-iface eth2 inet static
-address 10.68.0.1
-netmask 255.255.248.0
-```
-
-- Angsana(15 Host)
-```
-#A14
-auto eth0
-iface eth0 inet static
-address 10.68.21.158
-netmask 255.255.255.224
-gateway 10.68.21.129
-```
-
-- Batakan(1020 Host)
-```
-#A15
-auto eth0
-iface eth0 inet static
-address 10.68.7.253
-netmask 255.255.248.0
-gateway 10.68.0.1
-```
-
-- Takisung(513 Host)
-```
-#A15
-auto eth0
-iface eth0 inet static
-address 10.68.7.254
-netmask 255.255.248.0
-gateway 10.68.0.1
-```
-
-- Bajuin(511 Host)
-```
-#A15
-auto eth0
-iface eth0 inet static
-address 10.68.7.252
-netmask 255.255.248.0
-gateway 10.68.0.1
-```
-
-- Sulawesi 
+- KALIMANTAN-SELATAN 
 ```
 auto lo
 iface lo inet loopback
 
-#A16 jAWA Sulawesi
 auto eth0
 iface eth0 inet static
-address 10.68.21.202
-netmask 255.255.255.252
-gateway 10.68.21.201
+    address 10.68.21.202
+    netmask 255.255.255.252
+    gateway 10.68.21.201
 
-#a17
 auto eth1
 iface eth1 inet static
-address 10.68.21.169
-netmask 255.255.255.248
+    address 10.68.21.97
+    netmask 255.255.255.224
 
-#A20
 auto eth2
 iface eth2 inet static
-address 10.68.20.129
-netmask 255.255.255.128
+    address 10.68.0.1
+    netmask 255.255.248.0
 ```
-
-- Makassar
+- Angsana 
 ```
-#A17
 auto eth0
 iface eth0 inet static
-address 10.68.21.174
-netmask 255.255.255.248
-gateway 10.68.21.169
+    address 10.68.21.98
+    netmask 255.255.255.224
+    gateway 10.68.21.97
+```
+- Bajuin 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.0.2
+    netmask 255.255.248.0
+    gateway 10.68.0.1
+```
+- Takisung 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.0.3
+    netmask 255.255.248.0
+    gateway 10.68.0.1
+```
+- Batakan 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.0.4
+    netmask 255.255.248.0
+    gateway 10.68.0.1
+```
+- SULAWESI 
+```
+auto lo
+iface lo inet loopback
 
-#A18
+auto eth0
+iface eth0 inet static
+    address 10.68.21.206
+    netmask 255.255.255.252
+    gateway 10.68.21.205
+
 auto eth1
 iface eth1 inet static
-address 10.68.21.161
-netmask 255.255.255.248
-```
+    address 10.68.21.161
+    netmask 255.255.255.248
 
-- Galesong
+auto eth2
+iface eth2 inet static
+    address 10.68.20.129
+    netmask 255.255.255.128
 ```
-#A18
+- MAKASAR 
+```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-address 10.68.21.166
-netmask 255.255.255.248
-gateway 10.68.21.161
-```
+    address 10.68.21.162
+    netmask 255.255.255.248
+    gateway 10.68.21.161
 
-- Topejawa-Takalar
-```
-#A18
-auto eth0
-iface eth0 inet static
-address 10.68.21.166
-netmask 255.255.255.248
-gateway 10.68.21.161
-```
-
-- Belawa 
-```
-#A17
-auto eth0
-iface eth0 inet static
-address 10.68.21.174
-netmask 255.255.255.248
-gateway 10.68.21.169
-
-#A19
 auto eth1
 iface eth1 inet static
-address 10.68.21.1
-netmask 255.255.255.192
+    address 10.68.21.169
+    netmask 255.255.255.248
 ```
-
-- Madini(30 Host)
+- Topejawa-Takalar 
 ```
-#A19
 auto eth0
 iface eth0 inet static
-address 10.68.21.61
-netmask 255.255.255.192
-gateway 10.68.21.1
+    address 10.68.21.170
+    netmask 255.255.255.248
+    gateway 10.68.21.169
 ```
-
-- Baru(30 Host)
+- Galesong 
 ```
-#A19
 auto eth0
 iface eth0 inet static
-address 10.68.21.62
-netmask 255.255.255.192
-gateway 10.68.21.1
+    address 10.68.21.170
+    netmask 255.255.255.248
+    gateway 10.68.21.169
 ```
+- BELAWA 
+```
+auto lo
+iface lo inet loopback
 
-- PC-Gorontalo(32 Host)
-```
-#A20
 auto eth0
 iface eth0 inet static
-address 10.68.20.254
-netmask 255.255.255.128
-gateway 10.68.20.129
-```
+    address 10.68.21.163
+    netmask 255.255.255.248
+    gateway 10.68.21.161
 
-- PC-Marisa(30 Host)
-```
-#A20
-auto eth0
-iface eth0 inet static
-address 10.68.20.253
-netmask 255.255.255.128
-gateway 10.68.20.129
-```
-
-- Maluku Utara
-```
-#A20
-auto eth0
-iface eth0 inet static
-address 10.68.20.254
-netmask 255.255.255.128
-gateway 10.68.20.129
-
-#A21
 auto eth1
 iface eth1 inet static
-address 10.68.8.1
-netmask 255.255.248.0
+    address 10.68.21.1
+    netmask 255.255.255.192
 ```
-
-- Tobelo (511 Host)
+- Baru 
 ```
-#A21
 auto eth0
 iface eth0 inet static
-address 192.173.15.254
-netmask 255.255.248.0
-gateway 10.68.8.1
+    address 10.68.21.2
+    netmask 255.255.255.192
+    gateway 10.68.21.1
 ```
-
-- Ternate (511 Host)
+- Madini 
 ```
-#A21
 auto eth0
 iface eth0 inet static
-address 192.173.15.253
-netmask 255.255.248.0
-gateway 10.68.8.1
+    address 10.68.21.3
+    netmask 255.255.255.192
+    gateway 10.68.21.1
 ```
+- Marisa 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.20.132
+    netmask 255.255.255.128
+    gateway 10.68.20.129
+```
+- Gorontalo 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.20.131
+    netmask 255.255.255.128
+    gateway 10.68.20.129
+```
+- MALUKU-UTARA 
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+    address 10.68.20.130
+    netmask 255.255.255.128
+    gateway 10.68.20.129
+
+auto eth1
+iface eth1 inet static
+    address 10.68.8.1
+    netmask 255.255.248.0
+``` 
+- Ternate 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.8.2
+    netmask 255.255.248.0
+    gateway 10.68.8.1
+```
+- Morotai 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.8.3
+    netmask 255.255.248.0
+    gateway 10.68.8.1
+```
+- Tobelo 
+```
+auto eth0
+iface eth0 inet static
+    address 10.68.8.4
+    netmask 255.255.248.0
+    gateway 10.68.8.1
+```
+
+## Routing 
+- Jawa
+```
+#SUMATERA
+route add -net 10.68.21.180 netmask 255.255.255.252 gw 10.68.21.178
+route add -net 10.68.19.0 netmask 255.255.255.0 gw 10.68.21.178
+route add -net 10.68.21.64 netmask 255.255.255.224 gw 10.68.21.178
+route add -net 10.68.21.184 netmask 255.255.255.252 gw 10.68.21.178
+route add -net 10.68.20.0 netmask 255.255.255.128 gw 10.68.21.178
+route add -net 10.68.21.128 netmask 255.255.255.224 gw 10.68.21.178
+
+#KALIMANTAN
+route add -net 10.68.21.192 netmask 255.255.255.252 gw 10.68.21.190
+route add -net 10.68.18.0 netmask 255.255.255.0 gw 10.68.21.190
+route add -net 10.68.21.196 netmask 255.255.255.252 gw 10.68.21.190
+route add -net 10.68.16.0 netmask 255.255.254.0 gw 10.68.21.190
+route add -net 10.68.21.200 netmask 255.255.255.252 gw 10.68.21.190
+route add -net 10.68.21.96 netmask 255.255.255.224 gw 10.68.21.190
+route add -net 10.68.0.0 netmask 255.255.248.0 gw 10.68.21.190
+
+#SULAWESI
+route add -net 10.68.21.160 netmask 255.255.255.248 gw 10.68.21.206
+route add -net 10.68.21.168 netmask 255.255.255.248 gw 10.68.21.206
+route add -net 10.68.21.0 netmask 255.255.255.192 gw 10.68.21.206
+route add -net 10.68.20.128 netmask 255.255.255.128 gw 10.68.21.206
+route add -net 10.68.8.0 netmask 255.255.248.0 gw 10.68.21.206
+```
+- SUMATERA
+```
+#JAWA
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.68.21.177
+
+#SUMATERA-UTARA
+route add -net 10.68.21.184 netmask 255.255.255.252 gw 10.68.21.68
+route add -net 10.68.20.0 netmask 255.255.255.128 gw 10.68.21.68
+route add -net 10.68.21.128 netmask 255.255.255.224 gw 10.68.21.68
+
+#LAMPUNG
+route add -net 10.68.19.0 netmask 255.255.255.0 gw 10.68.21.182
+```
+- KALIMANTAN
+```
+route add -net 10.68.18.0 netmask 255.255.255.0 gw 10.68.21.194
+route add -net 10.68.21.196 netmask 255.255.255.252 gw 10.68.21.194
+route add -net 10.68.16.0 netmask 255.255.254.0 gw 10.68.21.194
+route add -net 10.68.21.200 netmask 255.255.255.252 gw 10.68.21.194
+route add -net 10.68.21.96 netmask 255.255.255.224 gw 10.68.21.194
+route add -net 10.68.0.0 netmask 255.255.248.0 gw 10.68.21.194
+```
+- SULAWESI
+```
+#MALUKU-UTARA
+route add -net 10.68.8.0 netmask 255.255.248.0 gw 10.68.20.130
+
+#MAKASAR
+route add -net 10.68.21.168 netmask 255.255.255.248 gw 10.68.21.162
+
+#BELAWA
+route add -net 10.68.21.0 netmask 255.255.255.192 gw 10.68.21.163
+```
+- SUMATERA-UTARA
+```
+#SW-BLANGKARAI
+route add -net 10.68.20.0 netmask 255.255.255.128 gw 10.68.21.186
+#SW-BANDA-ACEH
+route add -net 10.68.21.128 netmask 255.255.255.224 gw 10.68.21.186 
+```
+- LAMPUNG
+```
+#SUMATERA
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.68.21.181
+```
+- KALIMANTAN-UTARA
+```
+route add -net 10.68.16.0 netmask 255.255.254.0 gw 10.68.21.198
+route add -net 10.68.21.200 netmask 255.255.255.252 gw 10.68.21.198
+route add -net 10.68.21.96 netmask 255.255.255.224 gw 10.68.21.198
+route add -net 10.68.0.0 netmask 255.255.248.0 gw 10.68.21.198
+```
+- MAKASAR
+```
+#SULAWESI
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.68.21.161
+```
+- BELAWA 
+```
+#SULAWESI
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.68.21.161
+```
+- MALUKU-UTARA
+```
+#SULAWESI
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.68.20.129
+```
+- ACEH
+```
+#SUMATERA UTARA
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.68.21.185 
+```
+- KALIMANTAN-TIMUR
+```
+route add -net 10.68.21.96 netmask 255.255.255.224 gw 10.68.21.202
+route add -net 10.68.0.0 netmask 255.255.248.0 gw 10.68.21.202
+```
+- KALIMANTAN-SELATAN
+```
+#KALIMANTAN-TIMUR
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.68.21.201
+```
+
+## Testing : 
+<video controls src="foto/0608.mp4" title="demo"></video>
+
 
 
 ## CIDR (CPT)
