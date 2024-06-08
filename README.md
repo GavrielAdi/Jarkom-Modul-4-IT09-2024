@@ -7,16 +7,16 @@
 
 ## Topologi 
 ### CPT
-![cpt](foto/cpt.png)
+![cpt](assets/cpt.png)
 
 ### GNS3
-![gnsthree](foto/gns3.png)
+![gnsthree](assets/gns3.png)
 
 ## Prefix IP
 Kelompok kami memiliki Prefix IP 10.68
 
 ## Rute
-![rut](foto/rute.png)
+![rut](assets/rute.png)
 
 ## VLSM 
 Inti utama dari penggunaan teknik VLSM adalah untuk mengefisienkan pembagian IP di dalam jaringan. Besar netmask disesuaikan dengan banyaknya komputer/ host yang membutuhkan alamat IP.
@@ -24,10 +24,10 @@ Inti utama dari penggunaan teknik VLSM adalah untuk mengefisienkan pembagian IP 
 Jadi, pada teknik VLSM, subnet mask (netmask) akan diberikan sesuai dengan kebutuhan jumlah alamat IP dari subnet tersebut.
 
 **Tree VLSM :**
-![vlsmtri](foto/tree-vlsm.png)
+![vlsmtri](assets/tree-vlsm.png)
 
 **Pembagian IP :**
-![vlzm](<foto/ip vlsm.png>)
+![vlzm](<assets/ip vlsm.png>)
 
 **Konfigurasi Network :**
 - JAWA
@@ -587,15 +587,58 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.68.21.201
 ```
 
 ## Testing : 
-<video controls src="foto/0608.mp4" title="demo"></video>
+<video controls src="assets/0608.mp4" title="demo"></video>
 
 
 
 ## CIDR (CPT)
-![cidr](foto/cidr.png)
+![a](assets/Subnet%20A.png)
 ### Penggabungan
+1. Pertama
+![b](assets/Subnet%20B.png)
+![1](assets/pembagian-1.png)
 
+2. Kedua
+![c](assets/Subnet%20C.png)
+![2](assets/pembagian-2.png)
 
+3. Ketiga
+![d](assets/Subnet%20D.png)
+![3](assets/pembagian-3.png)
 
-## GNS3 (VLSM)
-![vlsm](foto/vlsm.png)
+4. Keempat
+![e](assets/Subnet%20E.png)
+![4](assets/pembagian-4.png)
+
+5. Kelima
+![f](assets/Subnet%20F.png)
+![5](assets/pembagian-5.png)
+
+6. Keenam
+![g](assets/Subnet%20G.png)
+![6](assets/pembagian-6.png)
+
+7. Ketujuh
+![h](assets/Subnet%20H.png)
+![7](assets/pembagian-7.png)
+
+8. Kedelapan
+![i](assets/Subnet%20I.png)
+![8](assets/pembagian-8.png)
+
+9. Kesembilan
+![j](assets/Subnet%20J.png)
+![9](assets/pembagian-9.png)
+
+10. Kesepuluh
+![k](assets/Subnet%20K.png)
+![10](assets/pembagian-10.png)
+
+### Tree
+![tree-cidr](assets/tree-cidr-it09.png)
+
+### Pembagian IP
+![ip-cidr](assets/ip-cidr.png)
+
+### Testing
+<video controls src="assets/demo-cidr.mp4" title="demo"></video>
